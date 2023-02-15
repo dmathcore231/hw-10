@@ -1,0 +1,16 @@
+.input-main {
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  text-align: left;
+
+  &_size_l {
+    padding: 0px 0 209px 0;
+  }
+
+  &::placeholder {
+    color: #BDBDBD;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: 'Open Sans';
+  }
+}

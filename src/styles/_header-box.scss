@@ -1,0 +1,46 @@
+.header-box {
+  background: url(/src/images/bg-header.png);
+  @include bg;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__wrapper {
+    padding: 208px 0 185px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .header-box__content {
+    padding-left: 40px;
+
+    &__wrapper {
+      padding: 137px 0 106px 0;
+      gap: 32px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-box {
+    &__wrapper {
+      padding: 84px 0 50px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+    }
+
+    &__content {
+      padding-left: 0px;
+      flex-direction: column;
+      gap: 56px;
+    }
+  }
+
+}

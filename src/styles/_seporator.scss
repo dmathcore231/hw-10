@@ -1,0 +1,15 @@
+.seporator {
+  height: 1px;
+  width: 170px;
+  background-color: #EC7979;
+}
+
+.seporator_white {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .seporator {
+    width: 134px;
+  }
+}

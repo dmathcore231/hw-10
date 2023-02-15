@@ -1,0 +1,12 @@
+.banner {
+  background: url(/src/images/bg-banner.png);
+  @include bg;
+  padding: 50px 0 50px 0;
+}
+
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 30px 0 30px 0;
+  }
+}

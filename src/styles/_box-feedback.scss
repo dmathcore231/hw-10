@@ -1,0 +1,86 @@
+.dots {
+  display: none;
+}
+
+.box-feedback {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 100px 0;
+
+  &__row {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__col {
+    width: calc(33% - 15px);
+  }
+}
+
+.promo-profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+.toasts-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+
+  &__content {
+    background: #E2E2E2;
+    border-radius: 10px;
+    padding: 48px 0px 48px 0px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tringal {
+  display: flex;
+  padding-left: 67px;
+}
+
+
+@media (max-width: 1024px) {
+  .box-feedback {
+    padding: 50px 0 50px 0;
+  }
+
+  .tringal {
+    top: 249px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box-feedback {
+    padding: 30px 0 30px 0;
+    gap: 30px;
+
+    &__col {
+      width: 100%;
+    }
+
+    &__col-none {
+      display: none;
+    }
+  }
+
+  .dots {
+    display: inline-flex;
+    justify-content: center;
+  }
+}

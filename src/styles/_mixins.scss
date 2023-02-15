@@ -1,0 +1,11 @@
+@mixin img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@mixin bg {
+  background-size: cover;
+  background-attachment: inherit;
+  background-repeat: no-repeat;
+}

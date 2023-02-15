@@ -1,0 +1,145 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 0 100px 0;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 100px;
+    gap: 30px;
+  }
+
+  &__title {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+  }
+
+  &__image {
+    display: flex;
+  }
+}
+
+.tabs>input[type="radio"] {
+  display: none;
+}
+
+.tabs>div {
+  display: none;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+}
+
+#tab-btn-1:checked~.tabs__content_first,
+#tab-btn-2:checked~.tabs__content_second,
+#tab-btn-3:checked~.tabs__content_three {
+  display: flex;
+  gap: 30px;
+}
+
+.tabs>label {
+  display: inline-block;
+  border: 1px solid #C6CBCD;
+  border-radius: 5px 5px 0px 0px;
+  padding: 7px 82px 7px 82px;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 19px;
+  cursor: pointer;
+  position: relative;
+  top: 1.5px;
+}
+
+.tabs>label:not(:first-of-type) {
+  border-left: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+
+@media (max-width: 1024px) {
+  .tabs {
+    padding: 50px 0 100px 0;
+
+    & .tabs__text {
+      padding-left: 65px;
+      gap: 25px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 33px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  #tab-btn-1:checked~.tabs__content_first,
+  #tab-btn-2:checked~.tabs__content_second,
+  #tab-btn-3:checked~.tabs__content_three {
+    gap: 25px;
+  }
+
+  .tabs>label {
+    padding: 7px 60px 7px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #tab-btn-1:checked~.tabs__content_first,
+  #tab-btn-2:checked~.tabs__content_second,
+  #tab-btn-3:checked~.tabs__content_three {
+    display: flex;
+    gap: 0px;
+    padding: 30px 0 30px 0;
+  }
+
+  .tabs>label {
+    padding: 7px 30px 7px 30px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0 40px 0;
+
+    &__image {
+      display: none;
+    }
+
+    &__text {
+      padding-left: 0px;
+      align-items: center;
+      gap: 35px;
+    }
+
+    &__description {
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .tabs>label {
+    padding: 7px 20px 7px 20px;
+  }
+}

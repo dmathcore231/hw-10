@@ -1,0 +1,44 @@
+.box-icon {
+  display: flex;
+  gap: 30px;
+
+  &__link {
+    color: #CCC;
+  }
+
+  &__link:hover {
+    color: #EC7979;
+  }
+
+  &__link:active {
+    color: #AB4949;
+  }
+
+  &__wrapper {
+    background: #F8EFEF;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .box-icon {
+    display: flex;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .box-icon {
+    gap: 15px;
+
+    &__link {
+      max-height: 26px;
+      max-width: 26px;
+    }
+  }
+
+  .icon {
+    @include img-contain;
+  }
+}
